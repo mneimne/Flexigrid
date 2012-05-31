@@ -6,7 +6,7 @@ $sortorder = isset($_POST['sortorder']) ? $_POST['sortorder'] : 'desc';
 $query = isset($_POST['query']) ? $_POST['query'] : false;
 $qtype = isset($_POST['qtype']) ? $_POST['qtype'] : false;
 
-$path_to_db = "";
+$path_to_db = ""; // path to sqlite database
 
 $sqlite = new Sqlite3($path_to_db);
 
